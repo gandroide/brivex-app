@@ -70,7 +70,7 @@ export function isInputCheckbox(input: IDefaultInput): input is IInputCheckbox {
 }
 
 export function isSelectOption(event: IChangeEvent): event is ISelectOption {
-  return ('name' && 'value' && 'label') in event;
+  return 'name' in event && 'value' in event && 'label' in event;
 }
 
 export function isTextarea(input: IDefaultInput): input is ITextarea {
