@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../context/Auth';
 import { Button } from '../Button';
 import { NavbarContainer, NavbarLogo } from './styled';
-import TfalconImage from '../../pages/login/tfalcon.jpg';
+//import TfalconImage from '../../pages/login/tfalcon.jpg';
 import { AdminTitle } from '../../pages/admin/styled';
 import { useLocation } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <NavbarContainer>
       <NavbarLogo>
-        <img src={TfalconImage} alt="" />
+        {/* <img src={TfalconImage} alt="" /> */}
       </NavbarLogo>
       {user.isAdmin && location.pathname.includes('admin') && (
         <AdminTitle>Painel Admistrativo</AdminTitle>
